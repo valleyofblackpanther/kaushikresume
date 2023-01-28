@@ -6,6 +6,80 @@
 
 html {
   scroll-behavior: smooth;
+  
+}
+
+body{
+  font-family: "Comic Sans MS", "Helvetica Neue", sans-serif;
+  color: white;
+}
+
+.social-buttons-container{
+  margin-top:100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-insta-card{
+  background-color: #ee0b01;
+  color:white;
+  margin-right:10px;
+  border-radius: 5px;
+  width:50px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.fa-twitter-card{
+  background-color: #00aced;
+  color:white;
+  margin-right:10px;
+  border-radius: 5px;
+  width:50px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.fa-linkedin-card{
+  background-color: #007bb9;
+  color:white;
+  margin-right:10px;
+  border-radius: 5px;
+  width:50px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.fa-github-card{
+  background-color: #42454a;
+  color:white;
+  margin-right:10px;
+  border-radius: 5px;
+  width:50px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 30px;
 }
 
 .arrow-button {
@@ -56,7 +130,6 @@ html {
     #8f0d3f
   );
   background-size: 1800% 1800%;
-
   -webkit-animation: rainbow 10s ease infinite;
   -z-animation: rainbow 10s ease infinite;
   -o-animation: rainbow 10s ease infinite;
@@ -74,6 +147,7 @@ html {
     background-position: 0% 82%;
   }
 }
+
 @-moz-keyframes rainbow {
   0% {
     background-position: 0% 82%;
@@ -85,6 +159,7 @@ html {
     background-position: 0% 82%;
   }
 }
+
 @-o-keyframes rainbow {
   0% {
     background-position: 0% 82%;
@@ -96,6 +171,7 @@ html {
     background-position: 0% 82%;
   }
 }
+
 @keyframes rainbow {
   0% {
     background-position: 0% 82%;
@@ -119,9 +195,16 @@ html {
 
 .home-name {
   color: white;
-  font-size: 120px;
+  font-size: 60px;
   font-family: "Epilogue", sans-serif;
   font-weight: 1000;
+  text-align: left;
+  margin-bottom: 100px;
+  padding-left: 20px;
+  padding-right:20px;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 .description {
@@ -131,15 +214,47 @@ html {
   font-size: 35px;
 }
 
-.name-container {
-  height: 900px;
-  /* margin-top: 340px; */
+.profile-container{
+  height: 100vh;
+  margin-bottom:140px;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
-  margin-left: 100px;
-  align-self: flex-start;
+}
+
+.name-container {
+  height: 90vh;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url("../../../public/images/kaushik.png");
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.shadow{
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.avatar-2{
+  border-radius: 200px;
+  width:400px;
+  height: auto;
+}
+
+.img-video{
+  margin-top:30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 }
 
 .down-container {
@@ -154,7 +269,7 @@ html {
 
 .about-container {
   width: 100%;
-  height: 450px;
+  height: 700px;
   background-image: url("https://res.cloudinary.com/dxnhvq8pl/image/upload/v1655625293/curve/Lovepik_com-611644583-Vector_curve_wave_lines_hhde8s.png");
   background-size: cover;
   display: flex;
@@ -162,10 +277,17 @@ html {
   justify-content: center;
   align-items: center;
   color: white;
-  text-align: center;
+  text-align: left;
+  /* font-weight: 200; */
+  
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   background-color: black;
   scroll-behavior: smooth;
+}
+
+.about-me-heading{
+  max-width: 1000px;
+  font-size: 18px;
 }
 
 .ul-container {
@@ -176,6 +298,7 @@ html {
   align-items: center;
   flex-wrap: wrap;
   width: 1200px;
+  
 }
 
 .ul-skillSet-container {
@@ -492,4 +615,22 @@ html {
   background: #ffcf4d;
   border: 1px solid rgba(255, 0, 88, 0.4);
   box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
+}
+
+.achivements{
+  background-color: #2c358b;
+  margin-top:20px;
+}
+
+.videocon {
+  font-family: "Comic Sans MS", "Helvetica Neue", sans-serif;
+  color: white;
+}
+
+.chris{
+  max-width: 400px;
+}
+
+.about{
+  font-size: 20px;
 }
