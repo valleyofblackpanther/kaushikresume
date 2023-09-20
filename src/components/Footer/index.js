@@ -7,7 +7,7 @@ const Footer = () => (
   <div className="footer-bg-container minusTenDegrees">
     <div className="social-media-container tenDegrees">
       <a
-        href="https://docs.google.com/document/d/1nWG8Fp4aW2gezVGoSRmcnRHCcN8AiI2b69AtpxkdCas/edit?usp=sharing"
+        href="https://docs.google.com/document/d/1qMiZBx6PZvbLtqyNGUfVIfQV7_nKxKCFcfhwNDPI1Lc/edit"
         target="_blank"
         rel="noopener noreferrer"
       >
