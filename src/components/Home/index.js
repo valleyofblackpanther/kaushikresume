@@ -227,11 +227,10 @@ const Home = () => (
       <div className="about-container minusTenDegrees" id="details">
         <h1 className="about tenDegrees">About</h1>
         <p className="tenDegrees about-me-heading">
-          ★ I am a student and a software engineer in Chennai City.
-          Before that, I was a software engineer intern at Spritle in Chennai.
-          I have acted as a CTO of a startup company for a brief time.
-          My résumé is available for viewing online or printing.
-          I am currently available for hire or for freelance work.
+          ★ I am currently a Master’s student at Queen Mary University of London (QMUL), 
+            majoring in Computer Science, with a specific focus on quantum computing. 
+            My background includes extensive work in both software engineering and 
+            quantum computing research.
           <br />
           <br />
           ★I travel to places and talk in front of large groups of people.
